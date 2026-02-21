@@ -12,7 +12,7 @@ export async function translateText(text: string, sourceLang: string, targetLang
   
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
+      model: "gemini-3.1-pro-preview",
       contents: text,
       config: {
         systemInstruction: `You are a professional translator and language tutor. Translate the given text from ${sourceLang} to ${targetLang}. 
